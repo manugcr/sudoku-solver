@@ -32,8 +32,6 @@ def print_board():
 def possible(x, y, n):
 	global board
 
-	#print(f'\nCoordinates: ({x}, {y}), Trying number: {n}\n')
-
 	# Reads through [y][i] horizontal row.
 	for i in range(len(board)):
 		if board[x][i] == n:
@@ -51,8 +49,7 @@ def possible(x, y, n):
 
 	# Checks if {n} it is in the box.
 	for i in range(0,3):
-		for j in range(0,3):
-			# print(f'in loop {box_x+i}, {box_y+j} == {n}' )			
+		for j in range(0,3):			
 			if board[box_x+i][box_y+j] == n:
 				# print(f'{n} is already in box ({box_x}, {box_y})')
 				return False
@@ -68,7 +65,6 @@ def solve():
 			if board[i][j] == 0:
 				
 				for n in range(1, 10):
-
 					if possible(i, j, n):
 						board[i][j] = n
 						solve()
