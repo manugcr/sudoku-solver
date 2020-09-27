@@ -1,5 +1,6 @@
 # sudoku-solver
-Solve a sudoku puzzle with recursion and multiple solutions.
+Solve a sudoku puzzle with recursion and backtracking algorithm. 
+It can show multiple solutions.
 
 # Requirements
 * Python 3.5 or higher
