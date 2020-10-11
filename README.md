@@ -15,4 +15,5 @@ and run it with double click or open CMD on path.
 
 #### To do:
 * Implement GUI
+* Implement sudoku generator
 * Make it playable
